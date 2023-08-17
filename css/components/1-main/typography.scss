@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+/* Typography */
+h1 {
+  font-size: 52px;
+}
+h2 {
+  font-size: 60px;
+}
+h3 {
+  font-size: 34px;
+}
+h4 {
+  font-size: 22px;
+  &._lg {
+    font-size: 30px;
+  }
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 18px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-primary;
+  font-weight: 700;
+  line-height: 1.4em;
+}
+
+p {
+  line-height: 1.8em;
+  font-size: 16px;
+  &._sm {
+    font-size: 14px;
+    line-height: 1.4em;
+  }
+}
