@@ -1,6 +1,7 @@
 /// section footer
 .footer {
   margin-top: 80px;
+  padding-bottom: 20px;
   &__inner {
     &-header {
       display: flex;
@@ -168,6 +169,11 @@
       pointer-events: none;
     }
   }
+  .input {
+    input {
+      padding-right: 4em;
+    }
+  }
 }
 @mixin footer-1160 {
   .footer {
@@ -211,6 +217,104 @@
       justify-content: space-evenly;
       padding: 40px 0;
       border-bottom: 1px solid $white;
+    }
+  }
+}
+@mixin footer-768 {
+  .footer {
+    &__links {
+      justify-content: space-between;
+    }
+    &__footer {
+      &-tos {
+        gap: 20px;
+        &-link {
+          font-size: 13px;
+        }
+      }
+      &-social {
+        font-size: 18px;
+      }
+    }
+    &__inner {
+      &-header {
+        &-group {
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+@mixin footer-560 {
+  .footer {
+    &__inner {
+      &-header {
+        &-group {
+          span {
+            font-size: 12px;
+            margin-right: 1em;
+          }
+          .button {
+            font-size: 12px;
+            min-width: unset;
+          }
+        }
+      }
+    }
+    .input {
+      font-size: 16px;
+    }
+    .button {
+      font-size: 16px;
+    }
+  }
+}
+@mixin footer-460 {
+  .footer {
+    &__inner {
+      &-header {
+        &-group {
+          span {
+            display: none;
+          }
+        }
+      }
+      &-body {
+        &-subscribe {
+          width: 100%;
+        }
+      }
+    }
+    &__links {
+      gap: 10px;
+      &-item {
+        font-size: 14px;
+      }
+      &-title {
+        font-size: 16px;
+      }
+    }
+    &__footer {
+      flex-direction: column-reverse;
+      align-items: center;
+      &-social {
+        .guttom {
+          color: #1d263a;
+          font-size: 22px;
+        }
+      }
+    }
+    &__body {
+      padding: 15px;
+      border-radius: 10px;
+    }
+    .input {
+      font-size: 14px;
+    }
+    .button {
+      font-size: 16px;
     }
   }
 }

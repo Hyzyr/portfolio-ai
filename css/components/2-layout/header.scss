@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   padding: 15px 0;
-  z-index: 1;
+  z-index: 5;
   transition: 0.2s ease-out;
   transition-property: opacity, transform, padding;
   &__inner {
@@ -22,9 +22,11 @@
 
   &.sticky {
     position: fixed;
-    padding: 20px 0;
+    padding: 20px 0 ;
     animation: 0.3s sticky ease-in;
     transition-duration: 0.5s;
+    background: $black;
+    border-bottom: 1px solid $primary;
   }
   &._lg {
     padding: 30px 0;
@@ -124,6 +126,9 @@
     .logo {
       font-size: 18px;
     }
+    &._lg {
+      padding: 20px 0;
+    }
   }
   .nav {
     position: fixed;
@@ -150,12 +155,14 @@
       align-items: flex-start;
       justify-content: flex-start;
       box-sizing: border-box;
-      background: $white;
+      background: $black;
       box-shadow: 0px 4px 24px -1px rgba($black, 0.2);
       padding: 50px 25px;
       transform: translate(-100%);
       opacity: 0;
       transition: 0.15s ease-in-out 0s;
+      border: 1px solid $primary;
+      border-left: unset;
 
       &-group {
         flex-direction: column;
@@ -171,8 +178,8 @@
         }
       }
       &-link {
-        color: $black;
-
+        color: $white;
+        font-size: 18px;
         &:after {
           left: 0;
           top: 50%;
@@ -212,6 +219,13 @@
     .button {
       &--border {
         font-size: 12px;
+      }
+    }
+  }
+  .nav {
+    &__inner {
+      &-link {
+        font-size: 16px;
       }
     }
   }

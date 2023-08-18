@@ -42,6 +42,16 @@ const settings = {
       waitForTransition: false,
     },
   },
+  testimonials: {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    breakpoints: {
+      940: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+    },
+  },
 };
 
 document.querySelectorAll(".swiper").forEach((swiperSlider) => {

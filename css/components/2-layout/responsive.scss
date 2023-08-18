@@ -1,10 +1,12 @@
 @media (max-width: 1280px) {
+  @include typography-1280;
   @include layouts-1280;
 }
 @media (max-width: 1160px) {
   .autoContainer {
     padding: 0 40px;
   }
+  @include typography-1160;
   @include layouts-1160;
   @include footer-1160;
 }
@@ -19,6 +21,8 @@
   .autoContainer {
     padding: 0 25px;
   }
+  @include typography-940;
+  @include components-940;
   @include footer-940;
   @include layouts-940;
 }
@@ -26,16 +30,22 @@
   .autoContainer {
     padding: 0 15px;
   }
+  @include footer-768;
+  @include layouts-768;
 }
 @media (max-width: 560px) {
   ._hideMob {
     display: none;
   }
+  @include typography-560;
   @include layouts-560;
+  @include footer-560;
 }
 @media (max-width: 460px) {
+  @include typography-460;
   @include header-460;
   @include layouts-460;
+  @include footer-460;
 }
 @media (max-width: 390px) {
   @include layouts-390;

@@ -22,7 +22,7 @@
               <img src="images/logo-white.svg" alt="%ProjectName%" />
             </span>
           </a>
-          <nav class="nav">
+          <nav class="nav" id="menu">
             <div class="nav__inner">
               <a href="#" class="nav__inner-link">
                 Browse All
@@ -35,6 +35,9 @@
               </a>
             </div>
           </nav>
+          <div class="burger" id="menuBtn">
+            <span></span>
+          </div>
         </div>
       </div>
     </header>
@@ -49,6 +52,27 @@
               business brand
               in seconds
             </h1>
+            <div class="hero__inner-body">
+              <div class="swiper" data-swiper="card">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="ratioImage">
+                      <img src="./images/intro/intro-1.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="ratioImage">
+                      <img src="./images/intro/intro-2.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="ratioImage">
+                      <img src="./images/intro/intro-1.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <ul class="list">
               <li class="list__item">
                 <span class="custIcon custIcon--tick"></span>
@@ -80,27 +104,6 @@
               </p>
             </div>
           </div>
-          <div class="hero__inner-body">
-            <div class="swiper" data-swiper="card">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="ratioImage">
-                    <img src="./images/intro/intro-1.jpg" alt="">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="ratioImage">
-                    <img src="./images/intro/intro-2.jpg" alt="">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="ratioImage">
-                    <img src="./images/intro/intro-1.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
       <div class="hero__bg">
@@ -114,7 +117,6 @@
       </div>
     </section>
     <!-- #hero end -->
-
     <!-- #companies start -->
     <section class="companies">
       <div class="companies__inner">
@@ -210,7 +212,6 @@
       </div>
     </section>
     <!-- #companies end -->
-
     <!-- #latest start -->
     <section class="latest">
       <div class="autoContainer">
@@ -407,6 +408,75 @@
       </div>
     </section>
     <!-- #generate end -->
+    <!-- #testimonials start -->
+    <section class="testimonials ">
+      <div class="autoContainer">
+        <div class="testimonials__inner">
+          <h2>
+            Testimonials
+          </h2>
+          <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden" data-swiper="testimonials">
+            <div class="swiper-wrapper" id="swiper-wrapper-44bdfc48246a7f33" aria-live="polite">
+              <div class="testimonials__item swiper-slide swiper-slide-active" role="group" aria-label="1 / 4"
+                style="width: 680px; margin-right: 40px;">
+                <div class="testimonials__item-title">
+                  <strong>Olga T</strong>
+                  <span>— San Francisco</span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta facilis placeat ipsa minima soluta,
+                  doloribus tenetur accusamus totam recusandae dolorem? Omnis eius magnam libero quidem facere
+                  voluptatem quibusdam in id?
+                </p>
+              </div>
+              <div class="testimonials__item swiper-slide swiper-slide-next" role="group" aria-label="2 / 4"
+                style="width: 680px; margin-right: 40px;">
+                <div class="testimonials__item-title">
+                  <strong>Christi L</strong>
+                  <span>— Sausalito</span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta facilis placeat ipsa minima soluta,
+                  doloribus tenetur accusamus totam recusandae dolorem?
+                </p>
+              </div>
+              <div class="testimonials__item swiper-slide" role="group" aria-label="3 / 4"
+                style="width: 680px; margin-right: 40px;">
+                <div class="testimonials__item-title">
+                  <strong>Mary G</strong>
+                  <span>— San Francisco</span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta facilis placeat ipsa minima soluta,
+                  doloribus tenetur accusamus totam recusandae dolorem? Omnis eius magnam libero quidem facere
+                  voluptatem quibusdam in id?
+                </p>
+              </div>
+              <div class="testimonials__item swiper-slide" role="group" aria-label="4 / 4"
+                style="width: 680px; margin-right: 40px;">
+                <div class="testimonials__item-title">
+                  <strong>Aaron G</strong>
+                  <span>— Virtual</span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta facilis placeat ipsa minima soluta,
+                  doloribus tenetur accusamus totam recusandae dolorem?
+                </p>
+              </div>
+            </div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+          </div>
+          <div class="swiper-arrows">
+            <div class="swiper-arrow swiper-arrow-prev swiper-button-disabled" tabindex="-1" role="button"
+              aria-label="Previous slide" aria-controls="swiper-wrapper-44bdfc48246a7f33" aria-disabled="true">prev
+            </div>
+            <div class="swiper-arrow swiper-arrow-next" tabindex="0" role="button" aria-label="Next slide"
+              aria-controls="swiper-wrapper-44bdfc48246a7f33" aria-disabled="false">next</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #testimonials end -->
     <!-- #footer -->
     <footer class="footer">
       <div class="autoContainer">
@@ -504,7 +574,7 @@
   </div>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="js/swiper.js"></script>
-  <!-- <script src="js/main.js"></script> -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
