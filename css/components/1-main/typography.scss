@@ -2,13 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 /* Typography */
 h1 {
-  font-size: 52px;
-}
-h2 {
   font-size: 60px;
 }
+h2 {
+  font-size: 50px;
+  &._lg {
+    font-size: 44px;
+  }
+  &._sm {
+    font-size: 32px;
+  }
+}
 h3 {
-  font-size: 34px;
+  font-size: 40px;
 }
 h4 {
   font-size: 22px;

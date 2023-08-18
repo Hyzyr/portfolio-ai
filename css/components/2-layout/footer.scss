@@ -1,7 +1,6 @@
 /// section footer
 .footer {
-  background: #f9f9f9;
-  margin-top: 110px;
+  margin-top: 80px;
   &__inner {
     &-header {
       display: flex;
@@ -12,7 +11,7 @@
       -ms-flex-align: center;
       align-items: center;
       padding: 40px 0 30px 0;
-      border-bottom: 1px solid #ededed;
+      border-bottom: 1px solid $white;
       &-group {
         display: flex;
         -webkit-box-pack: justify;
@@ -22,8 +21,7 @@
         -ms-flex-align: center;
         align-items: center;
         span {
-          color: #101010;
-          font-family: "Inter", sans-serif;
+          color: $white;
           font-style: normal;
           font-weight: 500;
           font-size: 16px;
@@ -51,7 +49,7 @@
       &-subscribe {
         width: 290px;
         h3 {
-          color: #101010;
+          color: $white;
           font-style: normal;
           font-weight: 700;
           font-size: 24px;
@@ -78,7 +76,7 @@
       display: flex;
       gap: 50px;
       &-link {
-        color: #33353e;
+        color: $white;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -87,12 +85,14 @@
         -webkit-transition: 0.3s ease-out;
         transition: 0.3s ease-out;
         &:hover {
-          color: #2f5bd1;
+          color: $primary;
         }
       }
     }
     &-social {
       font-size: 20px;
+      display: flex;
+      gap: 30px;
     }
   }
   &__links {
@@ -109,7 +109,7 @@
       flex-direction: column;
     }
     &-title {
-      color: #101010;
+      color: $white;
       font-style: normal;
       font-weight: 700;
       font-size: 18px;
@@ -121,7 +121,7 @@
       position: relative;
       padding: 0.2em 0;
       margin-bottom: 1em;
-      color: #33353e;
+      color: $white;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
@@ -136,22 +136,36 @@
         left: 0;
         height: 1px;
         width: 0;
-        background: #33353e;
+        color: $white;
         opacity: 0;
-        -webkit-transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
         transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
       }
       &:last-child {
         margin-bottom: 1em;
       }
       &:hover {
-        color: #2f5bd1;
+        color: $primary;
         &:after {
           opacity: 1;
           width: 80%;
-          background: rgba(47, 91, 209, 0.8);
+          background: $primary;
         }
       }
+    }
+  }
+  &__body {
+    position: relative;
+    overflow: hidden;
+    background: $black;
+    border-radius: 15px;
+    padding: 30px;
+    &-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
     }
   }
 }
@@ -196,7 +210,7 @@
       max-width: unset;
       justify-content: space-evenly;
       padding: 40px 0;
-      border-bottom: 1px solid #ededed;
+      border-bottom: 1px solid $white;
     }
   }
 }

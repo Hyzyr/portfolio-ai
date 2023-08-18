@@ -8,12 +8,12 @@
   @include layouts-1160;
   @include footer-1160;
 }
-@media (max-width: 1025px) {
+@media (max-width: 1023px) {
   .autoContainer {
     padding: 0 30px;
   }
-  @include header-1025;
-  @include layouts-1025;
+  @include header-1023;
+  @include layouts-1023;
 }
 @media (max-width: 940px) {
   .autoContainer {
@@ -27,10 +27,16 @@
     padding: 0 15px;
   }
 }
-@media (max-width: 580px) {
+@media (max-width: 560px) {
   ._hideMob {
     display: none;
   }
+  @include layouts-560;
 }
 @media (max-width: 460px) {
+  @include header-460;
+  @include layouts-460;
+}
+@media (max-width: 390px) {
+  @include layouts-390;
 }

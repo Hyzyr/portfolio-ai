@@ -105,22 +105,24 @@
     }
   }
 }
-@mixin header-1025 {
+@mixin header-1023 {
   .header {
-    padding: 25px 0;
+    padding: 15px 0;
 
     &__inner {
       justify-content: space-between;
-
-      &-logo {
-        padding-right: 20px;
-        border-right: 2px solid rgba($white, 0.27);
-        border: 0;
-      }
       .burger {
         display: block;
         z-index: 2;
       }
+    }
+    .button {
+      &--border {
+        font-size: 14px;
+      }
+    }
+    .logo {
+      font-size: 18px;
     }
   }
   .nav {
@@ -198,6 +200,18 @@
         opacity: 1;
         transition: 0.3s ease-in-out 0.05s;
         transform: translate(0);
+      }
+    }
+  }
+}
+@mixin header-460 {
+  .header {
+    .logo {
+      font-size: 16px;
+    }
+    .button {
+      &--border {
+        font-size: 12px;
       }
     }
   }

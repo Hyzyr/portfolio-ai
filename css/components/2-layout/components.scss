@@ -207,7 +207,7 @@
 
   &--border {
     border-color: $primary;
-    color: $primary;
+    color: $white;
     border-radius: 10px;
     position: relative;
     &::before {
@@ -254,6 +254,19 @@
     line-height: 1;
     &:hover {
       border-color: rgba(29, 38, 58, 0.8);
+    }
+  }
+  &--arrow {
+    background: $primary;
+    border-radius: 50%;
+    padding: 0 !important;
+    width: 2em;
+    height: 2em;
+  }
+  &--ico {
+    padding: 0;
+    &:hover {
+      color: $primary;
     }
   }
   &:active {
@@ -639,5 +652,57 @@
         transition-delay: 0s;
       }
     }
+  }
+}
+.bubble {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: $primary;
+  border-radius: 50%;
+  filter: blur(200px);
+  opacity: 0.5;
+  top: -15%;
+  left: -15%;
+  &._bottom {
+    left: unset;
+    top: unset;
+    right: -15%;
+    bottom: -15%;
+    background: $secondary;
+  }
+  &._left {
+    top: -15%;
+    left: -15%;
+    background: $secondary;
+  }
+  &._right {
+    left: unset;
+    top: unset;
+    right: -15%;
+    bottom: -15%;
+    background: $primary;
+  }
+  &._sm {
+    width: 200px;
+    height: 200px;
+    filter: blur(100px);
+  }
+  &._extraSm {
+    width: 150px;
+    height: 150px;
+    filter: blur(70px);
+  }
+}
+.logo {
+  font-size: 20px;
+  width: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 }
