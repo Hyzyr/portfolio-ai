@@ -3173,6 +3173,9 @@ svg {
     font-size: 14px;
   }
 
+  .footer {
+    margin-top: 40px;
+  }
   .footer__inner-header-group span {
     display: none;
   }
