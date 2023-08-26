@@ -3201,6 +3201,10 @@ svg {
     color: #1d263a;
     font-size: 22px;
   }
+  .footer__body {
+    padding: 15px;
+    border-radius: 10px;
+  }
   .footer .input {
     font-size: 14px;
   }
