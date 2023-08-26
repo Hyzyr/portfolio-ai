@@ -1234,8 +1234,25 @@ svg {
   height: 100%;
   pointer-events: none;
 }
-.footer .input input {
+.footer .input--text input {
   padding-right: 4em;
+  background: #000;
+  color: #fff;
+}
+.footer .input--text input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer .input--text input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer .input--text input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer .input--text input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer .input--text input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .header {
@@ -3183,10 +3200,6 @@ svg {
   .footer__footer-social .guttom {
     color: #1d263a;
     font-size: 22px;
-  }
-  .footer__body {
-    padding: 15px;
-    border-radius: 10px;
   }
   .footer .input {
     font-size: 14px;

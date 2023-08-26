@@ -170,8 +170,15 @@
     }
   }
   .input {
-    input {
-      padding-right: 4em;
+    &--text {
+      input {
+        padding-right: 4em;
+        background: $black;
+        color: $white;
+        &::placeholder {
+          color: rgba($white, 0.6);
+        }
+      }
     }
   }
 }
@@ -306,10 +313,10 @@
         }
       }
     }
-    &__body {
-      padding: 15px;
-      border-radius: 10px;
-    }
+    // &__body {
+    //   // padding: 15px;
+    //   // border-radius: 10px;
+    // }
     .input {
       font-size: 14px;
     }
